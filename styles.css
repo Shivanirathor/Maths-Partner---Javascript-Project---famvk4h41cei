@@ -1,1 +1,51 @@
+.container{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.heading{
+    font-size: 40px;
+}
+
+ input, select{
+    margin: 20px;
+    margin-left: 150px;
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    border-radius: 30px;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+}
+
+.box1 label, .box2 label{
+    font-size: 20px; 
+}
+
+.box1 input, .box2 select{
+    margin-left: -10px; 
+}
+
+.inputBox1, .historycon{
+    margin-left: 350px;
+    background: rgb(185, 182, 182);
+    width: 50%;
+    height: 200px;
+   
+}
+#deleteBtn{
+    margin-left: 1110px;
+    margin-top: -30px;
+}
+.inputBox2{
+    margin-left: 350px;
+    margin-top: -150px;
+}
+
 

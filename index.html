@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- section1 -->
+    <div class="container">
+        <i class="fa-solid fa-trophy" style="font-size: 100px;  color: rgb(243, 161, 37);"></i>
+        <h2 class="heading">Maths partner</h2>
+       <input type="button" id="historybtn" value="History" onclick="historybtn()" >
+       <input type="button" id="savedbtn" value="SAVED SOLUTIONS" onclick="savedbtn()" >
+    </div>
+    <div class="historycon">
+        
+    </div>
 
+    <!-- section2 -->
+    <div class="section2">
+    <div class="box1">
+        <label for="problemBar"><h2>Problem</h2></label>
+        <input type="text" id="problemBar" placeholder="TYPE HERE......" >
+    </div>
+
+    <div class="box2">
+       <label for="searchbar"><h2>Select Category</h2></label>
+       <select name="searchbar" id="categoryBar"></i>
+                <option value="simplify">Simplify</option>
+                <option value="derive">Derive</option>
+                <option value="integrate">Integrate</option>
+                <option value="zeroes">Find 0's</option>
+                <option value="tangent">Find Tangent</option>
+                <option value="area">Area Under Curve</option>
+                <option value="cos">Cosine</option>
+                <option value="sin">Sine</option>
+                <option value="tan">Tangent</option>
+                <option value="arccos">Inverse Cosine</option>
+                <option value="arcsin">Inverse Sine</option>
+                <option value="arctan">Inverse Tangent</option>
+                <option value="abs">Absolute Value</option>
+                <option value="log">Logarithm</option>
+            </select>        
+            <button type="submit" id="searchBtn" onclick="searchBtn()"><i class="fa-solid fa-magnifying-glass" style="font-size: 40px;" ></i></button>
+    </div>
+    </div>
+    <div class="input-container">
+        <div class="inputBox1"></div>
+        <div class="inputBox2"></div>
+          <button type="reset" id="deleteBtn" onclick="deleteBtn()"><i class="fa-regular fa-trash-can" style="font-size: 40px; "></i></button>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
