@@ -18,6 +18,9 @@
     color: white;
     border-radius: 30px;
 }
+.historycon{
+    display: none;
+}
 
 .section2{
     display: flex;
