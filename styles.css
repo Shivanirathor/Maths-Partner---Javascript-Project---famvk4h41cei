@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: flex;
     margin-left: 200px;
@@ -7,6 +11,10 @@
 
 .heading{
     font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px ;
+    margin-top:30px;
+    
 }
 
  input, select{
@@ -20,6 +28,7 @@
 }
 .historycon{
     display: none;
+
 }
 
 .section2{
@@ -35,12 +44,20 @@
     margin-left: -10px; 
 }
 
-.inputBox1, .historycon{
+.inputBox1{
     margin-left: 350px;
-    background: rgb(185, 182, 182);
+    background: rgb(205, 205, 202);
     width: 50%;
     height: 200px;
-   
+    font-size: 30px;
+   border-radius: 10px;
+}
+.historycon{
+    margin-left: 350px;
+    background: rgb(205, 205, 202);
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
 }
 #deleteBtn{
     margin-left: 1110px;
