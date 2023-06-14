@@ -4,56 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maths Partner</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <!-- section1 -->
-    
-    <div class="container">
-        <i class="fa-solid fa-trophy" style="font-size: 100px;  color: rgb(243, 161, 37);"></i>
-        <h2 class="heading">Maths partner</h2>
-       <input type="button" id="historybtn" value="History" onclick="historybtn()" >
-       <input type="button" id="savedbtn" value="SAVED SOLUTIONS" onclick="savedbtn()" >
+    <!-- section 1 -->
+    <div class="containerOne">
+        <i class="fa-solid fa-trophy fa-beat"></i>  
+        <h2 class="heading">MATHS PARTNER</h2> 
+        <i class="fa-solid fa-trophy fa-beat"></i>  
     </div>
-    <div class="historycon">
-        
-    </div>
+        <div class="container-fluid"> 
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 one">
+                    <input type="button" class="form-control" id="historybtn" value="History" onclick="historybtn()" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 two">
+                    <input type="button" class="form-control" id="savedbtn" value="SAVED SOLUTIONS" onclick="savedbtn()" >
+                </div>  
+            </div>
+        </div>
+
+    <div class="historycon"></div>
 
     <!-- section2 -->
-    <div class="section2">
-    <div class="box1">
-        <label for="problemBar"><h2>Problem</h2></label>
-        <input type="text" id="problemBar" value="" placeholder="TYPE HERE......" >
+    <div class="section2 container-fluid">
+        <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 two">
+            <div class="box1">
+                <label for="problemBar"><h2>Problem</h2></label>
+                <input type="text" class="form-control" id="problemBar" value="" placeholder="TYPE HERE......" max="3">
+            </div>
+        </div>
+    
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 one">
+            <div class="box2">
+                <label for="searchbar"><h2>Select Category</h2></label>
+                <select name="searchbar" class="form-control" id="categoryBar"></i>
+                         <option value="simplify">Simplify</option>
+                         <option value="derive">Derive</option>
+                         <option value="integrate">Integrate</option>
+                         <option value="zeroes">Find 0's</option>
+                         <option value="tangent">Find Tangent</option>
+                         <option value="area">Area Under Curve</option>
+                         <option value="cos">Cosine</option>
+                         <option value="sin">Sine</option>
+                         <option value="tan">Tangent</option>
+                         <option value="arccos">Inverse Cosine</option>
+                         <option value="arcsin">Inverse Sine</option>
+                         <option value="arctan">Inverse Tangent</option>
+                         <option value="abs">Absolute Value</option>
+                         <option value="log">Logarithm</option>
+                     </select>        
+                     <!-- <button type="submit" id="searchBtn" onclick="searchBtn()">SEARCH<i class="fa-solid fa-magnifying-glass" style="font-size: 40px;" ></i></button> -->
+             </div>
+        </div>  
+    </div>
+    </div>
+    <!-- section 3 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 one">
+                <!-- <button type="submit" id="searchBtn" onclick="searchBtn()"><img src="https://as1.ftcdn.net/v2/jpg/00/29/83/72/1000_F_29837200_cx6ZB1Sh4vmJp3woE720JrvqOaMwqmfJ.jpg" alt="Calculate Result" width="250px" height="100px"/></button> -->
+                <button class="glow-on-hover" type="button" onclick="searchBtn()">Calculate</button>
+            </div>
+        </div>
     </div>
 
-    <div class="box2">
-       <label for="searchbar"><h2>Select Category</h2></label>
-       <select name="searchbar" id="categoryBar"></i>
-                <option value="simplify">Simplify</option>
-                <option value="derive">Derive</option>
-                <option value="integrate">Integrate</option>
-                <option value="zeroes">Find 0's</option>
-                <option value="tangent">Find Tangent</option>
-                <option value="area">Area Under Curve</option>
-                <option value="cos">Cosine</option>
-                <option value="sin">Sine</option>
-                <option value="tan">Tangent</option>
-                <option value="arccos">Inverse Cosine</option>
-                <option value="arcsin">Inverse Sine</option>
-                <option value="arctan">Inverse Tangent</option>
-                <option value="abs">Absolute Value</option>
-                <option value="log">Logarithm</option>
-            </select>        
-            <button type="submit" id="searchBtn" onclick="searchBtn()"><i class="fa-solid fa-magnifying-glass" style="font-size: 40px;" ></i></button>
-    </div>
-    </div>
-    <div class="input-container">
-        <div class="inputBox1"></div>
-        <button type="reset" id="deleteBtn" onclick="deleteBtn()"><i class="fa-regular fa-trash-can" style="font-size: 40px; "></i></button>
+     <!-- section 4 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-6 col-sm-12 col-12 one">
+                <div class="inputBox1">Output Box</div>
+            </div>
+            <div class="col-lg-12 col-md-6 col-sm-12 col-12 two">
+                <button type="reset" id="deleteBtn" onclick="deleteBtn()"><img src="https://w7.pngwing.com/pngs/271/838/png-transparent-computer-icons-delete-icon-white-text-logo-thumbnail.png" width="50px" height="50px" /></button> 
+            </div>
+        </div>
     </div>
 
-    <script src="App.js"></script>
-</body>
+    <script src="app.js"></script>
+    </body>
 </html>

@@ -1,20 +1,62 @@
 *{
     margin: 0;
     padding: 0;
-}
-.container{
-    display: flex;
-    margin-left: 200px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    font-family: cursive;
 }
 
-.heading{
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 20px ;
-    margin-top:30px;
+body{
+    background-image: url("https://img.freepik.com/premium-vector/abstract-technology-background_501557-13.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.containerOne{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    height: 100px;
+    justify-content: center;
+}
+
+.containerOne i{
+    font-size: 80px; 
+     color: rgb(255, 205, 40);
+}
+
+.fa-trophy{
+    margin-left: 20px;
+    }
     
+    .fa-trophy:hover{
+        transition: 1s ease;
+        color: rgb(247, 131, 7);
+    }
+    
+    .heading{
+        font-size: 80px;
+        font-weight: bold;
+        margin-left: 20px ;
+        margin-top:10px; 
+        color: rgb(255, 253, 253);
+    }
+.one{
+    background-color:  transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two {
+    background-color:  transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: white;
+    margin-left: 100px;
 }
 
  input, select{
@@ -22,50 +64,147 @@
     margin-left: 150px;
     font-size: 20px;
     padding: 10px 30px;
-    background-color: rgb(8, 8, 8);
-    color: white;
+    background-color: rgb(249, 206, 206);
+    color: rgb(35, 31, 31);
     border-radius: 30px;
+    box-shadow: 5px 3px 3px white;
 }
+
+.form-control{
+    width: 300px !important;
+    font-size: 25px !important;
+    margin: 20px 50px 50px 50px;
+}
+
 .historycon{
     display: none;
-
 }
 
-.section2{
-    display: flex;
-    justify-content: center;
+#historybtn:hover, #savedbtn:hover{
+    font-size: 22px;
+    cursor: pointer;
+    transition: 1s ease;
+   height: 50px;
 }
 
-.box1 label, .box2 label{
-    font-size: 20px; 
-}
-
-.box1 input, .box2 select{
-    margin-left: -10px; 
+#searchBtn{
+border: none;
+margin-left: -20px;
+cursor: pointer;
 }
 
 .inputBox1{
-    margin-left: 350px;
-    background: rgb(205, 205, 202);
-    width: 50%;
-    height: 200px;
+    background: rgb(254, 254, 251);
+    width: 60%;
+    height: 180px;
     font-size: 30px;
    border-radius: 10px;
+   box-shadow: 5px 5px 4px rgb(42, 42, 42);
+   
 }
-.historycon{
-    margin-left: 350px;
-    background: rgb(205, 205, 202);
+
+.remove {
+    display: inline;
+    font-size: 1.5em; 
+}
+
+.historycon, .remove{
+   margin: auto;
+    background: rgb(255, 255, 250);
     width: 50%;
     height: 200px;
     border-radius: 10px;
+    overflow: auto;
+    word-wrap: break-word;
 }
+
+.historycon::-webkit-scrollbar {
+    display: none;
+  }
+
 #deleteBtn{
-    margin-left: 1110px;
-    margin-top: -30px;
-}
-.inputBox2{
-    margin-left: 350px;
-    margin-top: -150px;
+    margin-top: -10px;
+    cursor: pointer;
+    margin-left: 950px;
 }
 
+.outputBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.fa{
+    size: 50px;   
+}
+
+@media screen and (max-width: 850px) {
+    .heading {
+        font-size: 50px;
+    }
+    #deleteBtn{
+        margin-left: 0px;
+    }
+}
+
+/* Css button */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fbfcf4;
+    background: #ffc4c4;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #ffd2d2
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #001c39;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
