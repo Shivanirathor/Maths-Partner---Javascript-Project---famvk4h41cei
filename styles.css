@@ -71,7 +71,7 @@ h2{
 }
 
 .form-control{
-    width: 300px !important;
+    width: 340px !important;
     font-size: 25px !important;
     margin: 20px 50px 50px 50px;
 }
@@ -81,16 +81,8 @@ h2{
 }
 
 #historybtn:hover, #savedbtn:hover{
-    font-size: 22px;
     cursor: pointer;
-    transition: 1s ease;
    height: 50px;
-}
-
-#searchBtn{
-border: none;
-margin-left: -20px;
-cursor: pointer;
 }
 
 .inputBox1{
@@ -108,7 +100,7 @@ cursor: pointer;
     font-size: 1.5em; 
 }
 
-.historycon, .remove{
+.historycon{
    margin: auto;
     background: rgb(255, 255, 250);
     width: 50%;
@@ -116,6 +108,20 @@ cursor: pointer;
     border-radius: 10px;
     overflow: auto;
     word-wrap: break-word;
+}
+ .remove{
+   margin-top: 100px;
+      background-color: red;
+   /* float: left; */
+    background: rgb(255, 255, 250);
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+.remove:hover{
+    background-color: red;
 }
 
 .historycon::-webkit-scrollbar {
@@ -137,6 +143,31 @@ cursor: pointer;
 .fa{
     size: 50px;   
 }
+/* ================ */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  /* =============== */
 
 @media screen and (max-width: 850px) {
     .heading {
